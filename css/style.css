@@ -1490,24 +1490,3 @@ ul.contacts p {
 #messenger .input-field:focus {
     outline: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*fixes for widths in left and right bar (white collapsable fields)*/
-@media (max-width: 1300px) {
-
-#main-content {
-	float: none;
-	margin: 0 auto;
-}
-
-}

@@ -1,9 +1,5 @@
-#left-sidebar, #right-sidebar {
-    display: none;
-}
-
 .current-user {
-	margin-left: 0 !important;
+    margin-left: 0 !important;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,500|Exo+2);
@@ -32,6 +28,7 @@ iframe#twitter-widget-0 {
     margin: 0;
     padding: 30px;
     height: 76px;
+    min-width: 1300px;
 }
 
 #header-items a {
@@ -47,14 +44,14 @@ iframe#twitter-widget-0 {
 }
 
 #header-items .current-user {
-    float: left;
+    float: right;
     width: auto;
     height: 100%;
 }
 
 #header-items .current-user div {
-    float: left;
-    margin-right: 30px;
+    float: right;
+    margin-left: 30px;
 }
 
 #header-items .current-user #user-pic {
@@ -501,10 +498,9 @@ ul.contacts p {
 /*center column*/
 
 #main-content {
-    max-width: 680px;
+    width: 680px;
     max-height: 1150px;
     height: auto;
-
     border-radius: 0px 0px 7px 7px;
     background: #267e9c; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -887,6 +883,9 @@ ul.contacts p {
     width: 240px;
     height: 100%;
     background-color: #0e171d;
+    -webkit-box-shadow: 3px 0px 14px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    3px 0px 14px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         3px 0px 14px 0px rgba(50, 50, 50, 0.5);
 }
 
 #left-sidebar .playlists {
@@ -1112,6 +1111,9 @@ ul.contacts p {
     width: 240px;
     height: 100%;
     background-color: #e9edee;
+    -webkit-box-shadow: -3px 0px 14px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    -3px 0px 14px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         -3px 0px 14px 0px rgba(50, 50, 50, 0.5);
 }
 
 #right-sidebar a {
@@ -1401,7 +1403,6 @@ ul.contacts p {
 
 .wrapper {
     width: 1300px;
-    max-width: 100%;
 }
 
 .wrapper .row {
@@ -1490,3 +1491,4 @@ ul.contacts p {
 #messenger .input-field:focus {
     outline: none;
 }
+

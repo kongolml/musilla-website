@@ -1,13 +1,13 @@
 #left-sidebar, #right-sidebar {
-	display: none;
+    display: none;
 }
 
 #header-items {
-	background: white;
+    background: white;
 }
 
 .bar-name {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 #left-bar {
@@ -17,7 +17,7 @@
 }
 
 #left-bar a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 #left-bar #room-info {
@@ -30,15 +30,15 @@
 }
 
 #left-bar #room-info .bar-name {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 #left-bar #room-info .bar-title {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #left-bar #room-info .bar-subtitle {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #left-bar #room-info .genres {
@@ -50,8 +50,8 @@
     display: inline-block;
     padding: 8px;
     border-radius: 3px;
-	margin: 2px;
-	margin-left: 0;
+    margin: 2px;
+    margin-left: 0;
     background: #f4f5f6; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0ZjVmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y0ZjVmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2VjZWZmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2VmZjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -79,16 +79,16 @@
 }
 
 #collapse-about-musilla .glyphicon {
-	top: 0;
+    top: 0;
 }
 
 #left-bar #room-info .game-level {
-	margin-top: 25px;
-	margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 #left-bar #room-info .game-size {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #left-bar #room-info .author {
@@ -122,106 +122,106 @@
 }
 
 #messenger {
-	position: relative !important;
-	margin-bottom: 30px;
-	box-shadow: none;
+    position: relative !important;
+    margin-bottom: 30px;
+    box-shadow: none;
 }
 
 #messenger .header {
-	height: 68px;
-	background-color: #1fae5b;
-	cursor: default;
-	font-size: 13px;
-	color: white;
-	font-family: roboto-medium;
+    height: 68px;
+    background-color: #1fae5b;
+    cursor: default;
+    font-size: 13px;
+    color: white;
+    font-family: roboto-medium;
 }
 
 #messenger .messages {
-	width: 100%;
-	background-color: white;
-	height: calc(100% - 118px);
-	position: relative;
-	padding: 20px;
+    width: 100%;
+    background-color: white;
+    height: calc(100% - 118px);
+    position: relative;
+    padding: 20px;
 }
 
 #messenger hr {
-	background: #f0f2f4;
-	height: 0;
-	width: 100%;
-	margin: 0;
-	margin-top:calc(100% + 13px);
+    background: #f0f2f4;
+    height: 0;
+    width: 100%;
+    margin: 0;
+    margin-top: calc(100% + 13px);
 }
 
 #main-content {
-	height: 580px;
-	margin-top: 20px;
-	border-radius: 7px;
-	padding-top: 25px;
-	background-image: url(../images/game-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	float: left;
+    height: 670px;
+    margin-top: 20px;
+    border-radius: 7px;
+    padding-top: 25px;
+    background-image: url(../images/game-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
 }
 
 #main-content .header * {
-	display: inline-block;
+    display: inline-block;
 }
 
 #main-content .header a {
-	color: inherit;
+    color: inherit;
 }
 
 #main-content .header a:hover {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 #main-content .header .invite-others {
-	float: left;
-	height: 48px;
-	width: 48px;
-	border: 2px solid rgba(255, 255, 255, .4);
-	background-color: transparent;
-	color: white;
-	padding-top:13px;
-	border-radius: 50%;
-	text-align: center;
-	margin-top: -13px;
+    float: left;
+    height: 48px;
+    width: 48px;
+    border: 2px solid rgba(255, 255, 255, .4);
+    background-color: transparent;
+    color: white;
+    padding-top: 13px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -13px;
 }
 
 #main-content .header .invite-others:hover {
-	border: 2px solid white;
-	background-color: white;
-	color: #25333c;
-	cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+    color: #25333c;
+    cursor: pointer;
 }
 
 #main-content .header .playing-extract {
-	color: white;
-	font-size: 19px;
-	font-family: roboto;
-	width: calc(100% - 96px);
-	text-align: center;
+    color: white;
+    font-size: 19px;
+    font-family: roboto;
+    width: calc(100% - 96px);
+    text-align: center;
 }
 
 #main-content .header .settings {
-	float: right;
-	height: 48px;
-	width: 48px;
-	border: 2px solid rgba(255, 255, 255, .4);
-	background-color: transparent;
-	color: white;
-	padding-top:13px;
-	border-radius: 50%;
-	text-align: center;
-	margin-top: -13px;
+    float: right;
+    height: 48px;
+    width: 48px;
+    border: 2px solid rgba(255, 255, 255, .4);
+    background-color: transparent;
+    color: white;
+    padding-top: 13px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -13px;
 }
 
 #main-content .header .settings:hover {
-	border: 2px solid white;
-	background-color: white;
-	color: #25333c;
-	cursor: pointer;
+    border: 2px solid white;
+    background-color: white;
+    color: #25333c;
+    cursor: pointer;
 }
 
 #main-content .answer {
@@ -234,10 +234,87 @@
     border-radius: 0 0 7px 7px;
     border: none;
     padding: 40px 20px;
-    font-size: 14px;
+    font-size: 18px;
     color: #84939b;
 }
 
 #main-content .answer:focus {
-	outline: none;
+    outline: none;
+}
+
+/*score board styles*/
+#score-board {
+    height: 670px;
+    width: 100%;
+}
+
+#score-board .title {
+    height: 59px;
+    margin-left: -20px;
+    padding: 25px 20px 15px;
+    color: #0e171d;
+    font-size: 17px;
+    line-height: 1;
+}
+
+#score-board .user {
+    width: 240px;
+    height: 60px;
+    margin-left: -20px;
+    padding: 15px 20px;
+}
+
+#score-board .user:hover {
+    background-color: #f0f2f4;
+    cursor: pointer;
+}
+
+#score-board .user > div {
+    display: inline-block;
+    float: left;
+}
+
+#score-board .user .avatar {
+    margin-top: 1px;
+    margin-right: 10px;
+}
+
+#score-board .user .avatar img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#score-board .user .info {
+    margin-top: -3px;
+}
+
+#score-board .user .info .songs, #score-board .user .info .scores {
+    float: left;
+    color: #43535d;
+    font-size: 11px;
+}
+
+#score-board .user .info .name {
+    color: #0d171d;
+    font-size: 14px;
+}
+
+#score-board .user .sign {
+    color: #25b05f;
+    margin-top: 5px;
+    float: right;
+}
+
+.popover-content {
+	width: 310px;
+	height: 140px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #fff;
+	-webkit-box-shadow: -8px 0 20px rgba(3,6,8,.2);
+	-moz-box-shadow: -8px 0 20px rgba(3,6,8,.2);
+	box-shadow: -8px 0 20px rgba(3,6,8,.2);
 }

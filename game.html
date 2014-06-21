@@ -1089,89 +1089,31 @@
 
 		<div id="right-bar" class="col-xs-2">
 
-			<div class="news-social">
-				<span class="facebook"><img src="http://icons.iconarchive.com/icons/artbees/social-networks-pro/128/Facebook-icon.png">Newsfeed</span>
-				<span class="twitter"><img src="http://www.thebrain.com/files/3213/8256/5967/twitter-logo.png"></span>
-			</div><!-- news-social -->
+			<div id="score-board">
+				<div class="title">Score Board</div>
 
-			<div class="news-list">
-				<div class="news">
-					<span class="news-text">Asdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf gAsdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf g</span>
-					<div class="news-author">
-						<div class="avatar"><a href="#"><img src="images/dummy/6.png"></a></div>
-						<div class="author-text">
-							<a href="#"><p class="authors-name">Sung Jin Park</p></a>
-							<a href="#"<p class="date">March 12 at 8:57pm</p></a>
-						</div>
-					</div>
-				</div><!-- news -->
 
-				<div class="news">
-					<span class="news-text">Asdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf gAsdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf g</span>
-					<div class="news-author">
-						<div class="avatar"><a href="#"><img src="images/dummy/6.png"></a></div>
-						<div class="author-text">
-							<a href="#"><p class="authors-name">Sung Jin Park</p></a>
-							<a href="#"<p class="date">March 12 at 8:57pm</p></a>
-						</div>
-					</div>
-				</div><!-- news -->
+				<div class="user" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
 
-				<div class="news">
-					<span class="news-text">Asdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf gAsdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf g</span>
-					<div class="news-author">
-						<div class="avatar"><a href="#"><img src="images/dummy/6.png"></a></div>
-						<div class="author-text">
-							<a href="#"><p class="authors-name">Sung Jin Park</p></a>
-							<a href="#"<p class="date">March 12 at 8:57pm</p></a>
-						</div>
-					</div>
-				</div><!-- news -->
+					<div class="avatar">
+						<img src="images/dummy/1.jpg">
+					</div><!-- avatar -->
 
-				<div class="news">
-					<span class="news-text">Asdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf gAsdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf g</span>
-					<div class="news-author">
-						<div class="avatar"><a href="#"><img src="images/dummy/6.png"></a></div>
-						<div class="author-text">
-							<a href="#"><p class="authors-name">Sung Jin Park</p></a>
-							<a href="#"<p class="date">March 12 at 8:57pm</p></a>
-						</div>
-					</div>
-				</div><!-- news -->
+					<div class="info">
+						<div class="name">Tatiana Cotliar</div>
+						<div class="songs"><span class="how-much-songs">6058</span>songs •&nbsp;</div>
+						<div class="scores"><span class="how-much-scores">548</span>scores</div>
+					</div><!-- info -->
 
-				<div class="news">
-					<span class="news-text">Asdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf gAsdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf g</span>
-					<div class="news-author">
-						<div class="avatar"><a href="#"><img src="images/dummy/6.png"></a></div>
-						<div class="author-text">
-							<a href="#"><p class="authors-name">Sung Jin Park</p></a>
-							<a href="#"<p class="date">March 12 at 8:57pm</p></a>
-						</div>
-					</div>
-				</div><!-- news -->
+					<div class="sign">
+						<span class="glyphicon glyphicon-bullhorn"></span>
+					</div><!-- sign -->
 
-				<div class="news">
-					<span class="news-text">Asdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf gAsdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf g</span>
-					<div class="news-author">
-						<div class="avatar"><a href="#"><img src="images/dummy/6.png"></a></div>
-						<div class="author-text">
-							<a href="#"><p class="authors-name">Sung Jin Park</p></a>
-							<a href="#"<p class="date">March 12 at 8:57pm</p></a>
-						</div>
-					</div>
-				</div><!-- news -->
+				</div><!-- user -->
 
-				<div class="news">
-					<span class="news-text">Asdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf gAsdjsdfgkjnsdfgkjnsdf sdkjfg kjsdfng ksjdfgnkjsdf g</span>
-					<div class="news-author">
-						<div class="avatar"><a href="#"><img src="images/dummy/6.png"></a></div>
-						<div class="author-text">
-							<a href="#"><p class="authors-name">Sung Jin Park</p></a>
-							<a href="#"<p class="date">March 12 at 8:57pm</p></a>
-						</div>
-					</div>
-				</div><!-- news -->
-			</div><!-- new-list -->
+
+			</div><!-- score-board -->
 
 		</div><!-- right-bar -->
 
@@ -1199,6 +1141,8 @@ $(".song").hover(function() {
 });
 
 $('[rel=popover]').popover();
+
+$('.user').popover({trigger: 'click', placement: 'left'});
 
 });
 

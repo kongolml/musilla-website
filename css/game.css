@@ -324,7 +324,7 @@
 }
 
 .userProfileCard .avatar {
-	float: left;
+    float: left;
     width: 96px;
     height: 96px;
     margin-right: 18px;
@@ -357,14 +357,14 @@
 }
 
 .userProfileCard .info .additional-info .country-flag {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
 .userProfileCard .friends {
-	width: 105px;
-	height: 22px;
-	float: left;
-	margin-top: 7px;
+    width: 105px;
+    height: 22px;
+    float: left;
+    margin-top: 7px;
 }
 
 .userProfileCard .friends .show-friends {
@@ -398,57 +398,169 @@
 }
 
 .userProfileCard .friends .more:hover {
-	background-color: #d3d9dd;
+    background-color: #d3d9dd;
 }
 
 .userProfileCard .friends .more:active {
-	background-color: #bac4c9;
-	color: #84939b;
-	border: solid 2px #bac4c9;
-	-webkit-box-shadow: none;
+    background-color: #bac4c9;
+    color: #84939b;
+    border: solid 2px #bac4c9;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
 .userProfileCard .popover-content {
-	padding: 0;
+    padding: 0;
 }
 
 .more-actions {
-	width: 128px;
-	height: 46px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
-	background-color: rgba(255,255,255,.95);
-	-moz-box-shadow: 0 1px 1px rgba(3,6,8,.1), 0 0 0 1px rgba(3,6,8,.04);
-	-webkit-box-shadow: 0 1px 1px rgba(3,6,8,.1), 0 0 0 1px rgba(3,6,8,.04);
-	box-shadow: 0 1px 1px rgba(3,6,8,.1), 0 0 0 1px rgba(3,6,8,.04);
-	padding: 15px 20px;
-	margin-left: -71px;
-	border: 1px solid #eeefef;
+    width: 128px;
+    height: 46px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: rgba(255, 255, 255, .95);
+    -moz-box-shadow: 0 1px 1px rgba(3, 6, 8, .1), 0 0 0 1px rgba(3, 6, 8, .04);
+    -webkit-box-shadow: 0 1px 1px rgba(3, 6, 8, .1), 0 0 0 1px rgba(3, 6, 8, .04);
+    box-shadow: 0 1px 1px rgba(3, 6, 8, .1), 0 0 0 1px rgba(3, 6, 8, .04);
+    padding: 15px 20px;
+    margin-left: -71px;
+    border: 1px solid #eeefef;
 }
 
 .more-actions .arrow {
-	display: none;
+    display: none;
 }
 
 .more-actions .popover-content {
-	padding: 0;
+    padding: 0;
 }
 
 .more-actions a {
-	margin-right: 20px;
-	float: left;
-	color: #53646d;
+    margin-right: 20px;
+    float: left;
+    color: #53646d;
 }
 
 .more-actions a:hover {
-	color: #25333c;
+    color: #25333c;
 }
 
 .more-actions a:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
+
+/*played songs*/
+#played-songs {
+    width: 940px;
+    height: 200px;
+    padding: 20px 0;
+    background-color: white;
+    position: relative;
+    float: left;
+    border-radius: 7px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#played-songs #left {
+    float: left;
+    height: calc(100% + 40px);
+    margin-top: -20px;
+    border-radius: 7px 0px 0px 7px;
+    width: 40px;
+    -webkit-box-shadow: inset 40px 0px 20px -20px rgba(255, 255, 255, .9);
+    -moz-box-shadow: inset 40px 0px 20px -20px rgba(255, 255, 255, .9);
+    box-shadow: inset 40px 0px 20px -20px rgba(255, 255, 255, .9);
+    position: relative;
+    z-index: 5;
+    padding: 93px 10px;
+}
+
+#played-songs #left .left, #played-songs #right .right {
+    color: #53646d;
+    border: none;
+	background-color: transparent;
+}
+
+#played-songs #right .right:hover, #played-songs #left .left:hover {
+	color: #25333c;
+}
+
+#played-songs #right {
+    float: right;
+    height: calc(100% + 40px);
+    margin-top: -20px;
+    border-radius: 7px 0px 0px 7px;
+    width: 40px;
+    -webkit-box-shadow: inset -40px 0px 20px -20px rgba(255, 255, 255, .9);
+    -moz-box-shadow: inset -40px 0px 20px -20px rgba(255, 255, 255, .9);
+    box-shadow: inset -40px 0px 20px -20px rgba(255, 255, 255, .9);
+    position: relative;
+    z-index: 5;
+    padding: 93px 10px;
+}
+
+#played-songs-container {
+    height: 160px;
+    width: auto;
+    z-index: 1;
+    position: absolute;
+    float: left;
+    left: 50px;
+	-webkit-transition: all ease-out 0.3s;
+	-moz-transition: all ease-out 0.3s;
+	-o-transition: all ease-out 0.3s;
+	transition: all ease-out 0.3s;
+}
+
+#played-songs-container .song-item {
+    height: 160px;
+    width: 160px;
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#played-songs-container .song-item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+#played-songs-container .song-item .song-info {
+    width: 152px;
+    height: 46px;
+    opacity: .7;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #090f13;
+    position: relative;
+    z-index: 20;
+    margin-top: -50px;
+    margin-left: 4px;
+    padding: 10px;
+    line-height: 1;
+}
+
+#played-songs-container .song-item .song-info .song-name {
+    font-size: 14px;
+    color: #ebefef;
+}
+
+#played-songs-container .song-item .song-info .artist-name {
+    font-size: 11px;
+    color: #83939b;
+}
+

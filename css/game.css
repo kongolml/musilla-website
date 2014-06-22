@@ -506,15 +506,18 @@
 
 #played-songs-container {
     height: 160px;
-    width: auto;
     z-index: 1;
     position: absolute;
     float: left;
-    left: 50px;
-	-webkit-transition: all ease-out 0.3s;
-	-moz-transition: all ease-out 0.3s;
-	-o-transition: all ease-out 0.3s;
-	transition: all ease-out 0.3s;
+    left: -125px;
+	-webkit-transition: all ease-out 0.2s;
+	-moz-transition: all ease-out 0.2s;
+	-o-transition: all ease-out 0.2s;
+	transition: all ease-out 0.2s;
+}
+
+#played-songs-container > div {
+	display: inline-block;
 }
 
 #played-songs-container .song-item {

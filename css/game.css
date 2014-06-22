@@ -307,14 +307,148 @@
     float: right;
 }
 
-.popover-content {
-	width: 310px;
-	height: 140px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	background-color: #fff;
-	-webkit-box-shadow: -8px 0 20px rgba(3,6,8,.2);
-	-moz-box-shadow: -8px 0 20px rgba(3,6,8,.2);
-	box-shadow: -8px 0 20px rgba(3,6,8,.2);
+.userProfileCard {
+    margin-left: -30px !important;
+    margin-top: -40px;
+    width: 310px;
+    height: 140px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+    -webkit-box-shadow: -8px 0 20px rgba(3, 6, 8, .2);
+    -moz-box-shadow: -8px 0 20px rgba(3, 6, 8, .2);
+    box-shadow: -8px 0 20px rgba(3, 6, 8, .2);
+    padding: 22px;
+    max-width: 310px !important;
+}
+
+.userProfileCard .avatar {
+	float: left;
+    width: 96px;
+    height: 96px;
+    margin-right: 18px;
+}
+
+.userProfileCard .avatar img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.userProfileCard .info {
+    float: left;
+}
+
+.userProfileCard .info .name {
+    font-size: 19px;
+    color: #0d171d;
+}
+
+.userProfileCard .info .scores {
+    font-size: 14px;
+    color: #0d171d;
+}
+
+.userProfileCard .info .additional-info {
+    font-size: 14px;
+    color: #43535d;
+}
+
+.userProfileCard .info .additional-info .country-flag {
+	margin-right: 10px;
+}
+
+.userProfileCard .friends {
+	width: 105px;
+	height: 22px;
+	float: left;
+	margin-top: 7px;
+}
+
+.userProfileCard .friends .show-friends {
+    width: 65px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: #d3d9dd;
+    border: none;
+    color: #43535d;
+    font-size: 11px;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+}
+
+.userProfileCard .friends .more {
+    width: 34px;
+    height: 22px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: solid 2px #d3d9dd;
+    color: #43535d;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1;
+    float: right;
+    padding: 0 !important;
+}
+
+.userProfileCard .friends .more:hover {
+	background-color: #d3d9dd;
+}
+
+.userProfileCard .friends .more:active {
+	background-color: #bac4c9;
+	color: #84939b;
+	border: solid 2px #bac4c9;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.userProfileCard .popover-content {
+	padding: 0;
+}
+
+.more-actions {
+	width: 128px;
+	height: 46px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: rgba(255,255,255,.95);
+	-moz-box-shadow: 0 1px 1px rgba(3,6,8,.1), 0 0 0 1px rgba(3,6,8,.04);
+	-webkit-box-shadow: 0 1px 1px rgba(3,6,8,.1), 0 0 0 1px rgba(3,6,8,.04);
+	box-shadow: 0 1px 1px rgba(3,6,8,.1), 0 0 0 1px rgba(3,6,8,.04);
+	padding: 15px 20px;
+	margin-left: -71px;
+	border: 1px solid #eeefef;
+}
+
+.more-actions .arrow {
+	display: none;
+}
+
+.more-actions .popover-content {
+	padding: 0;
+}
+
+.more-actions a {
+	margin-right: 20px;
+	float: left;
+	color: #53646d;
+}
+
+.more-actions a:hover {
+	color: #25333c;
+}
+
+.more-actions a:last-child {
+	margin-right: 0;
 }

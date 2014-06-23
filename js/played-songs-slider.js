@@ -31,6 +31,10 @@ $(document).ready(function (){
 			$("button.right").removeClass("disabled");
 			$("button.right").prop("disabled", false);
 		}
+
+		$("button.left").on('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function(e) {
+			alert("asd");
+		})
 	});
 
 

@@ -11,6 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -1150,6 +1151,8 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="15" class="dial" data-fgColor="#000000"></li>
+
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1175,6 +1178,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="35" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1200,6 +1204,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="35" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1225,6 +1230,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="13" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1250,6 +1256,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="67" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1275,6 +1282,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="34" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1300,6 +1308,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="95" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1325,6 +1334,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="43" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1350,6 +1360,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="27" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1375,6 +1386,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="45" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1400,6 +1412,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="35" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1425,6 +1438,7 @@
 						<li><a href="#">Rock</a></li>
 						<li><a href="#">Dance</a></li>
 						<li><a href="#">Pop</a></li>
+						<li class="progress"><input type="text" value="35" class="dial"></li>
 					</ul>
 					<div class="author">
 						<a href="#">
@@ -1532,6 +1546,7 @@
 	</div><!-- row -->
 </div>
 
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -1539,6 +1554,7 @@
     <script src="js/custom.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
 
 
     </script>
@@ -1585,6 +1601,28 @@ $('[rel=popover]').popover();
 	    });
 
 	});
+
+	$(function() {
+		$(".dial").knob({'displayInput': false,
+		'cursor': false,
+		'readOnly': true,
+		'width': 20,
+		'height': 20,
+		'thickness': .6,
+		'draw': function(v) {
+			$(".dial").each(function() {
+				if ( $(this).val() <= 25 ) {
+					$(this).attr({"data-fgColor": "#ffa235"});
+				} else if ( $(this).val() > 25 && $(this).val() <= 50) {
+					$(this).attr({"data-fgColor": "#ff6935"});
+				} else {
+					$(this).attr({"data-fgColor": "#f23232"});
+				}
+			})
+		}
+		});
+	});
+
 </script>
 
   </body>

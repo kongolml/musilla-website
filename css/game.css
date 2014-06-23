@@ -565,7 +565,7 @@
     position: absolute;
     float: left;
     left: -125px;
-    /* transition: all .1s; */
+    transition: all .3s;
 }
 
 #played-songs-container > div {

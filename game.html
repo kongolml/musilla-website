@@ -967,11 +967,14 @@
 
 
 
+<div id="logo">musilla</div>
+<div id="header-fix"></div>
+
+
 
   <!-- navigation header -->
 <div id="header-items" class="row">
 	<a href="#" class="colapse-left-sidebar"><span class="glyphicon glyphicon-music"></span></a>
-	<div id="logo">musilla</div>
 
 	<div class="current-user">
 		<a href="profile.html"><div id="user-pic"><img src="images/dummy/5.jpg"></div></a>
@@ -1011,12 +1014,12 @@
 
 				<div class="game-level">
 					<span class="title">Game Level</span>
-					<span class="chart"></span>
+					<div class="chart"><input type="text" value="50" class="dial" data-fgColor="#ff6935"></div>
 					<span class="level">Medium</span>
 				</div>
 				<div class="game-size">
 					<span class="title">Game Level</span>
-					<span class="glyphicon glyphicon-user"></span>
+					<div class="glyphicon glyphicon-user"></div>
 					<span class="players">12 players</span>
 				</div>
 
@@ -1082,6 +1085,8 @@
 				<div class="playing-extract">Playing Extract 8 of 26</div>
 				<a href="#" class="settings"><span class="glyphicon glyphicon-tasks"></span></a>
 			</div>
+
+			<div class="song-duration"><input type="text" value="23" class="dial" data-fgColor="#ffffff"></div>
 
 			<div class="likes"></div>
 
@@ -1449,6 +1454,7 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/jquery-ui-1.10.4.min.js"></script>
     <script src="js/played-songs-slider.js"></script>
+    <script src="js/jquery.knob.js"></script>
 
 
     </script>
@@ -1521,7 +1527,61 @@ $('.user').on('shown.bs.popover', function () {
 	        $("#right-sidebar").toggle("slide", {direction:'right'});
 	    });
 
+
 	});
+
+	$(function() {
+		$(".chart > .dial").knob({
+		'displayInput': false,
+		'cursor': false,
+		'readOnly': true,
+		'width': 20,
+		'height': 20,
+		'thickness': .6,
+		'width': 17,
+		'height': 17,
+		'draw': function(v) {
+			$(".chart > .dial").each(function() {
+				if ( $(this).val() <= 25 ) {
+					$(this).attr({"data-fgColor": "#ffa235"});
+				} else if ( $(this).val() > 25 && $(this).val() <= 50) {
+					$(this).attr({"data-fgColor": "#ff6935"});
+				} else {
+					$(this).attr({"data-fgColor": "#f23232"});
+				}
+			})
+		}
+		});
+
+	});
+
+
+	$(function() {
+		$(".song-duration > .dial").knob({
+		'cursor': false,
+		'readOnly': true,
+		'width': 20,
+		'height': 20,
+		'thickness': .06,
+		'max': 30,
+		'fontWeight': 100,
+		'width': 208,
+		'height': 208,
+		'draw': function(v) {
+			$(".song-duration > .dial").each(function() {
+				if ( $(this).val() <= 25 ) {
+					$(this).attr({"data-fgColor": "#ffa235"});
+				} else if ( $(this).val() > 25 && $(this).val() <= 50) {
+					$(this).attr({"data-fgColor": "#ff6935"});
+				} else {
+					$(this).attr({"data-fgColor": "#f23232"});
+				}
+			})
+		}
+		});
+
+	});
+
 </script>
 
   </body>

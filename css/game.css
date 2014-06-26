@@ -1,7 +1,3 @@
-#left-sidebar, #right-sidebar {
-    display: none;
-}
-
 #header-items {
     background: white;
 }
@@ -31,6 +27,7 @@
 
 #left-bar #room-info .bar-name {
     margin-left: 0;
+    font-weight: 400;
 }
 
 #left-bar #room-info .bar-title {
@@ -43,7 +40,7 @@
 
 #left-bar #room-info .genres {
     padding: 0;
-    font-family: roboto-light;
+    font:
 }
 
 #left-bar #room-info .genres li {
@@ -80,11 +77,29 @@
 
 #collapse-about-musilla .glyphicon {
     top: 0;
+    margin: 1px 9px;
 }
 
 #left-bar #room-info .game-level {
-    margin-top: 25px;
+    margin-top: 24px;
     margin-bottom: 15px;
+    display: inline-block;
+}
+
+#left-bar #room-info .game-level .title {
+    font-weight: 800;
+    float: left;
+}
+
+#left-bar #room-info .game-level .chart {
+    margin: 1px 9px;
+    width: 17px;
+    float: left;
+
+}
+
+#left-bar #room-info .game-size .title {
+    font-weight: 800;
 }
 
 #left-bar #room-info .game-size {
@@ -125,6 +140,7 @@
     position: relative !important;
     margin-bottom: 30px;
     box-shadow: none;
+    z-index: 600;
 }
 
 #messenger .header {
@@ -133,7 +149,7 @@
     cursor: default;
     font-size: 13px;
     color: white;
-    font-family: roboto-medium;
+    font-weight: 300;
 }
 
 #messenger .messages {
@@ -199,7 +215,6 @@
 #main-content .header .playing-extract {
     color: white;
     font-size: 19px;
-    font-family: roboto;
     width: calc(100% - 96px);
     text-align: center;
 }
@@ -224,17 +239,23 @@
     cursor: pointer;
 }
 
-#main-content .likes {
-	width: 242px;
-	height: 98px;
-	padding: 20px 40px;
-	bottom: 138px;
-	position: absolute;
-	border-top: 2px solid rgba(255, 255, 255, .2);
-	border-bottom: 2px solid rgba(255, 255, 255, .2);
+#main-content .song-duration {
 	margin: 0 auto;
-	left: 0;
-	right: 0;
+	width: 208px;
+	margin-top: 142px;
+}
+
+#main-content .likes {
+    width: 242px;
+    height: 98px;
+    padding: 20px 40px;
+    bottom: 138px;
+    position: absolute;
+    border-top: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 #main-content .answer {
@@ -279,18 +300,13 @@
 }
 
 #main-content .answer .submit:hover {
-	background-color: #21bb62;
+    background-color: #21bb62;
 }
 
 #main-content .answer .submit:active {
-	background-color: #1da154;
-	color: #8ed0aa;
+    background-color: #1da154;
+    color: #8ed0aa;
 }
-
-
-
-
-
 
 /*score board styles*/
 #score-board {
@@ -305,6 +321,7 @@
     color: #0e171d;
     font-size: 17px;
     line-height: 1;
+    font-weight: 400;
 }
 
 #score-board .user {
@@ -555,8 +572,8 @@
 }
 
 #played-songs .right.disabled, #played-songs .left.disabled {
-	color: #84939b !important;
-	cursor: not-allowed;
+    color: #84939b !important;
+    cursor: not-allowed;
 }
 
 #played-songs-container {
@@ -583,9 +600,9 @@
 }
 
 #played-songs-container .song-item.running-extract {
-	z-index: 10;
-	position: relative;
-	height: 160px;
+    z-index: 10;
+    position: relative;
+    height: 160px;
     width: 160px;
     border: 2px solid #bbe7cd;
     padding: 38px;
@@ -593,9 +610,9 @@
 }
 
 #played-songs-container .song-item.next-extract {
-	z-index: 10;
-	position: relative;
-	height: 160px;
+    z-index: 10;
+    position: relative;
+    height: 160px;
     width: 160px;
     border: 2px solid #d3d9dd;
     padding: 38px;
@@ -638,5 +655,11 @@
 #played-songs-container .song-item .song-info .artist-name {
     font-size: 11px;
     color: #83939b;
+}
+
+@media (max-width: 1600px) {
+    #messenger {
+        right: 0px !important;
+    }
 }
 

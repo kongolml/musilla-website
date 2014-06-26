@@ -12,6 +12,7 @@
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='images/sprites/sprites.css' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -963,12 +964,14 @@
 </div>
 <!-- right-sidebar end -->
 
+<div id="logo">musilla</div>
+<div id="header-fix"></div>
 
 
   <!-- navigation header -->
 <div id="header-items" class="row">
 	<a href="#" class="colapse-left-sidebar"><span class="glyphicon glyphicon-music"></span></a>
-	<div id="logo">musilla</div>
+
 
 	<div class="current-user">
 		<a href="#" class="colapse-right-sidebar"><div id="friends-list"><span class="glyphicon glyphicon-user"></span></div></a>
@@ -1603,7 +1606,8 @@ $('[rel=popover]').popover();
 	});
 
 	$(function() {
-		$(".dial").knob({'displayInput': false,
+		$(".dial").knob({
+		'displayInput': false,
 		'cursor': false,
 		'readOnly': true,
 		'width': 20,

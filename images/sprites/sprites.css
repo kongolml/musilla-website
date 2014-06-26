@@ -1,0 +1,22 @@
+.fb-active, .fb-hover, .fb-up{
+	background: url(sprites.png) no-repeat;
+}
+
+.fb-active{
+	background-position: -22px 0;
+	width: 104px;
+	height: 16px;
+}
+
+.fb-hover{
+	background-position: -11px 0;
+	width: 9px;
+	height: 16px;
+}
+
+.fb-up{
+	background-position: 0 0;
+	width: 9px;
+	height: 16px;
+}
+

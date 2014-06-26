@@ -82,22 +82,4 @@ $(document).ready(function() {
 	});
 
 
-
-
-
-
-	//positioning ".current-user"
-	var centralContentMargin = $(".container.wrapper").offset().left;
-	var currentUserMargin = $("#left-bar").outerWidth() + $("#main-content").outerWidth() + $("#right-bar").outerWidth() + 20 + centralContentMargin - 30 - 21; //sum of the central content elements + margin - header padding - header padding
-	$("#header-items .current-user").css("margin-left", currentUserMargin);
-
-	//and change it, when viewport is changed
-	$(window).resize(function(){
-		var centralContentMargin = $(".container.wrapper").offset().left;
-		var currentUserMargin = $("#left-bar").outerWidth() + $("#main-content").outerWidth() + $("#right-bar").outerWidth() + 20 + centralContentMargin - 30 - 21; //sum of the central content elements + margin - header padding - header padding
-		$("#header-items .current-user").css("margin-left", currentUserMargin);
-
-
-	})
-
 })

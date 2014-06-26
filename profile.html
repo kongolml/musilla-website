@@ -968,6 +968,7 @@
 
 
 
+
 <!-- messenger start -->
 <div id="messenger">
 
@@ -988,18 +989,20 @@
 <!-- messenger end -->
 
 
+<div id="logo">musilla</div>
+<div id="header-fix"></div>
+
 
 
   <!-- navigation header -->
 <div id="header-items" class="row">
 	<a href="#" class="colapse-left-sidebar"><span class="glyphicon glyphicon-music"></span></a>
-	<div id="logo">musilla</div>
 
 	<div class="current-user">
-		<a href="#"><div id="user-pic"><img src="images/dummy/5.jpg"></div></a>
-		<a href="#"><div id="nofitications"><span class="glyphicon glyphicon-bell"></span></div></a>
-		<a href="#"><div id="logout"><span class="glyphicon glyphicon-log-out"></span></div></a>
 		<a href="#" class="colapse-right-sidebar"><div id="friends-list"><span class="glyphicon glyphicon-user"></span></div></a>
+		<a href="#"><div id="logout"><span class="glyphicon glyphicon-log-out"></span></div></a>
+		<a href="#"><div id="nofitications"><span class="glyphicon glyphicon-bell"></span></div></a>
+		<a href="#"><div id="user-pic"><img src="images/dummy/5.jpg"></div></a>
 	</div><!-- current-user -->
 
 	<div id="new-user">
@@ -1136,6 +1139,7 @@
 
 			<div class="user-summary-main">
 				<p class="summary-name">music</p>
+				<div class="songs-graph"><input type="text" value="65" class="dial" data-fgColor="#000000"></div>
 			</div>
 			<div class="user-summary-additional">
 				<span class="how-much-songs">6,536 songs</span>
@@ -1342,6 +1346,7 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/jquery-ui-1.10.4.min.js"></script>
     <script src="flag-icon-css-master/assets/docs.js"></script>
+    <script src="js/jquery.knob.js"></script>
 
 
     </script>
@@ -1361,6 +1366,17 @@ $(".song").hover(function() {
 });
 
 $('[rel=popover]').popover();
+
+$(".songs-graph > .dial").knob({
+	'readOnly': true,
+	'cursor': false,
+	'thickness': 1,
+	'bgColor': "#52a3bd",
+	'fgColor': "#d25d52",
+	'displayInput': false,
+	'width': 216,
+	'height': 216,
+});
 
 });
 

@@ -40,7 +40,6 @@
 
 #left-bar #room-info .genres {
     padding: 0;
-    font:
 }
 
 #left-bar #room-info .genres li {
@@ -240,15 +239,40 @@
 }
 
 #main-content .song-duration {
-	margin: 0 auto;
-	width: 208px;
-	margin-top: 142px;
+    margin: 0 auto;
+    width: 204px;
+    height: 204px;
+    margin-top: 142px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .7);
+    -moz-box-shadow: 0 8px 30px rgba(3, 6, 8, .25);
+    -webkit-box-shadow: 0 8px 30px rgba(3, 6, 8, .25);
+    box-shadow: 0 8px 30px rgba(3, 6, 8, .25);
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAzMDUwNyIgc3RvcC1vcGFjaXR5PSIwLjQiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTM2NDZkIiBzdG9wLW9wYWNpdHk9IjAuNCIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+    background-image: -moz-linear-gradient(bottom, rgba(3, 6, 8, .3) 0%, rgba(83, 100, 109, .3) 100%);
+    background-image: -o-linear-gradient(bottom, rgba(3, 6, 8, .3) 0%, rgba(83, 100, 109, .3) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgba(3, 6, 8, .3) 0%, rgba(83, 100, 109, .3) 100%);
+    background-image: linear-gradient(bottom, rgba(3, 6, 8, .3) 0%, rgba(83, 100, 109, .3) 100%);
+
+}
+
+#main-content .song-duration canvas {
+    margin-left: -6px;
+    margin-top: -5px;
+}
+
+#main-content .song-duration input.dial {
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: 100 !important;
+    font-size: 60px !important;
+    margin-left: 45px !important;
+    margin-top: -150px !important;
 }
 
 #main-content .likes {
     width: 242px;
     height: 98px;
-    padding: 20px 40px;
+    padding: 15px 40px;
     bottom: 138px;
     position: absolute;
     border-top: 2px solid rgba(255, 255, 255, .2);
@@ -256,6 +280,42 @@
     margin: 0 auto;
     left: 0;
     right: 0;
+}
+
+#main-content .likes .like, #main-content .likes .dislike {
+    float: left;
+    height: 42px;
+    width: 42px;
+    border: none;
+    background: transparent;
+    font-size: 42px;
+    color: white;
+    padding: 0;
+}
+
+#main-content .likes .divide {
+	height: 34px;
+	width: 2px;
+	background-color: rgba(255, 255, 255, .2);
+	float: left;
+	margin: 10px 38px;
+}
+
+#main-content .likes .counter {
+	height: 20px;
+	position: absolute;
+	margin-top: 50px;
+	width: 155px;
+	font-size: 16px;
+	color: white;
+}
+
+#main-content .likes .counter .like-counter {
+	float: left;
+}
+
+#main-content .likes .counter .dislike-counter {
+	float: right;
 }
 
 #main-content .answer {

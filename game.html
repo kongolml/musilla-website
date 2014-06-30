@@ -14,6 +14,7 @@
     <link href="flag-icon-css-master/assets/docs.css" rel="stylesheet">
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -1014,7 +1015,7 @@
 
 				<div class="game-level">
 					<span class="title">Game Level</span>
-					<div class="chart"><input type="text" value="50" class="dial" data-fgColor="#ff6935"></div>
+					<div class="chart"><input type="text" value="50" class="dial"></div>
 					<span class="level">Medium</span>
 				</div>
 				<div class="game-size">
@@ -1088,7 +1089,16 @@
 
 			<div class="song-duration"><input type="text" value="23" class="dial" data-fgColor="#ffffff"></div>
 
-			<div class="likes"></div>
+			<div class="likes">
+				<button class="like"><span class="glyphicon glyphicon-heart"></span></button>
+				<div class="divide"></div>
+				<button class="dislike"><span class="glyphicon glyphicon-heart-empty"></span></button>
+
+				<div class="counter">
+					<div class="like-counter">1,323</div>
+					<div class="dislike-counter">307</div>
+				</div>
+			</div>
 
 
 			<form class="answer">
@@ -1562,11 +1572,14 @@ $('.user').on('shown.bs.popover', function () {
 		'readOnly': true,
 		'width': 20,
 		'height': 20,
-		'thickness': .06,
+		'thickness': .08,
 		'max': 30,
 		'fontWeight': 100,
 		'width': 208,
 		'height': 208,
+		'fgColor': "#ffffff",
+		'bgColor': "none",
+		'lineCap': 'round',
 		'draw': function(v) {
 			$(".song-duration > .dial").each(function() {
 				if ( $(this).val() <= 25 ) {

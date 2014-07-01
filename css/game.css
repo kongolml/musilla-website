@@ -243,6 +243,8 @@
     width: 204px;
     height: 204px;
     margin-top: 142px;
+    position: relative;
+    z-index: 5;
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, .7);
     -moz-box-shadow: 0 8px 30px rgba(3, 6, 8, .25);
@@ -294,28 +296,28 @@
 }
 
 #main-content .likes .divide {
-	height: 34px;
-	width: 2px;
-	background-color: rgba(255, 255, 255, .2);
-	float: left;
-	margin: 10px 38px;
+    height: 34px;
+    width: 2px;
+    background-color: rgba(255, 255, 255, .2);
+    float: left;
+    margin: 10px 38px;
 }
 
 #main-content .likes .counter {
-	height: 20px;
-	position: absolute;
-	margin-top: 50px;
-	width: 155px;
-	font-size: 16px;
-	color: white;
+    height: 20px;
+    position: absolute;
+    margin-top: 50px;
+    width: 155px;
+    font-size: 16px;
+    color: white;
 }
 
 #main-content .likes .counter .like-counter {
-	float: left;
+    float: left;
 }
 
 #main-content .likes .counter .dislike-counter {
-	float: right;
+    float: right;
 }
 
 #main-content .answer {
@@ -659,6 +661,30 @@
     margin-right: 5px;
 }
 
+#played-songs-container .song-item ul {
+	height: 30px;
+	padding-left: 20px;
+	margin-top: 7px;
+}
+
+#played-songs-container .song-item ul li {
+	display: inline-block;
+	height: 100%;	font-size: 24px;
+}
+
+#played-songs-container .song-item ul li a {
+	color: #a9a9a9;
+}
+
+#played-songs-container .ImageWrapper {
+    border-radius: 5px;
+}
+
+#played-songs-container .song-item .ImageOverlayH {
+    z-index: 20;
+    border-radius: 5px;
+}
+
 #played-songs-container .song-item.running-extract {
     z-index: 10;
     position: relative;
@@ -685,7 +711,7 @@
     width: 100%;
     border-radius: 5px;
     position: relative;
-    z-index: 10;
+    z-index: 300;
 }
 
 #played-songs-container .song-item .song-info {
@@ -707,6 +733,13 @@
     line-height: 1;
 }
 
+#played-songs-container .song-item .song-info .StyleK {
+    top: -25px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
 #played-songs-container .song-item .song-info .song-name {
     font-size: 14px;
     color: #ebefef;
@@ -721,5 +754,42 @@
     #messenger {
         right: 0px !important;
     }
+}
+
+/*equalizer styles*/
+.visualizer {
+    position: absolute;
+    z-index: 1;
+    top: 175px;
+    left: 10px;
+    right: 0;
+}
+
+.visualizer .eqItem {
+    width: 1px !important;
+    background-color: rgba(255, 255, 255, .5) !important;
+    margin-top: 0 !important;
+}
+
+.eqItem {
+    width: 1px !important;
+    background-color: rgba(255, 255, 255, .3) !important;
+    margin-top: 0 !important;
+}
+
+.eqCol {
+    width: 7px !important;
+}
+
+.visualizer-mirror {
+    position: absolute;
+    z-index: 1;
+    top: 297px;
+    left: 0px;
+    right: 10px;
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2)
 }
 

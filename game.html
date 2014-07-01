@@ -14,6 +14,9 @@
     <link href="flag-icon-css-master/assets/docs.css" rel="stylesheet">
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/liEqualizer.css" rel="stylesheet" type="text/css" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/sinister.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -978,10 +981,10 @@
 	<a href="#" class="colapse-left-sidebar"><span class="glyphicon glyphicon-music"></span></a>
 
 	<div class="current-user">
-		<a href="profile.html"><div id="user-pic"><img src="images/dummy/5.jpg"></div></a>
-		<a href="#"><div id="nofitications"><span class="glyphicon glyphicon-bell"></span></div></a>
-		<a href="#"><div id="logout"><span class="glyphicon glyphicon-log-out"></span></div></a>
 		<a href="#" class="colapse-right-sidebar"><div id="friends-list"><span class="glyphicon glyphicon-user"></span></div></a>
+		<a href="#"><div id="logout"><span class="glyphicon glyphicon-log-out"></span></div></a>
+		<a href="#"><div id="nofitications"><span class="glyphicon glyphicon-bell"></span></div></a>
+		<a href="profile.html"><div id="user-pic"><img src="images/dummy/5.jpg"></div></a>
 	</div><!-- current-user -->
 
 	<div id="new-user">
@@ -1080,6 +1083,9 @@
 
 		<div id="main-content" class="col-md-7">
 
+
+			<div class="visualizer"></div>
+			<div class="visualizer-mirror"></div>
 
 			<div class="header">
 				<a href="#" class="invite-others"><span class="glyphicon glyphicon-user"></span></a>
@@ -1321,12 +1327,25 @@
 					</div><!-- song-info -->
 				</div><!-- song-item -->
 
-				<div class="song-item">
-					<img src="images/dummy/song.jpg">
-					<div class="song-info">
+				<div class="song-item ImageWrapper ContentWrapperCl chrome-fix">
+					<img src="images/dummy/song.jpg" class="img-responsive" >
+					<div class="ContentCl">
+					<!-- <div class="song-info"> -->
+						<div class="Content">
+							<ul>
+		                        <li><a href="#"><i class="fa fa-rss-square"></i></a></li>
+		                        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+		                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+		                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+		                    </ul>
+		                </div><!-- Content -->
+		            </div><!-- ContentCl -->
+<!--
 						<span class="song-name">Bleeding Out</span><br>
 						<span class="artist-name">Imagine Dragons</span>
-					</div><!-- song-info -->
+-->
+					<!--</div> song-info -->
 				</div><!-- song-item -->
 
 				<div class="song-item">
@@ -1465,6 +1484,7 @@
     <script src="js/jquery-ui-1.10.4.min.js"></script>
     <script src="js/played-songs-slider.js"></script>
     <script src="js/jquery.knob.js"></script>
+    <script src="js/jquery.liEqualizer.js"></script>
 
 
     </script>
@@ -1594,6 +1614,24 @@ $('.user').on('shown.bs.popover', function () {
 		});
 
 	});
+
+
+	$('.visualizer').liEqualizer({
+	    row:12,       //кол-во столбцов
+	    col:74,       //кол-во колонок
+	    speed:25,    //скорость подсветки кубиков
+	    freq:200,    //частота сигнала
+	    on:false,      //включено по умолчанию (true,false)
+	});
+
+	$('.visualizer-mirror').liEqualizer({
+	    row:12,       //кол-во столбцов
+	    col:74,       //кол-во колонок
+	    speed:25,    //скорость подсветки кубиков
+	    freq:200,    //частота сигнала
+	    on:false,      //включено по умолчанию (true,false)
+	});
+
 
 </script>
 

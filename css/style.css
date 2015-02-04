@@ -1222,6 +1222,8 @@ ul.contacts p {
     position: absolute;
     padding-left: 30px;
     z-index: 1;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
 }
 
 #right-sidebar .friend {
@@ -1230,6 +1232,8 @@ ul.contacts p {
     padding-right: 0;
     width: calc(100% + 60px);
     height: 60px;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
 }
 
 #right-sidebar .friend:hover {
@@ -1458,7 +1462,6 @@ ul.contacts p {
     width: 100%;
     padding: 20px;
     padding-top: 16px;
-    cursor: move;
 }
 
 #messenger .header * {
